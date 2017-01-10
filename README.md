@@ -10,7 +10,7 @@ __
 * Insert at the beginning of the line: __I__
 * Autocomplete dialog: __ctrl n__
 * Insert first autocomplete match: __ctrl p__
-* Suspend vim process: __ctrl + z__
+* Suspend vim process: __ctrl z__
 * Resume suspended vim process from console: __fg (foreground)__
 * Go to the beginning of the current or previous word: __b__
 * Go to the beginning of next word: __w__
