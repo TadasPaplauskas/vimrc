@@ -1,4 +1,4 @@
-# vimrc__
+# vimrc
 My very basic, vanilla vim setup fnd cheatsheet or basic productivity in the remote environments.__
 __
 ## Cheatsheet__
@@ -16,6 +16,8 @@ __
 * Go to the beginning of next word: __w__
 * Go to the end of current or next word: __e__
 * Go to the end of the previous word: __ge__
+* Select current word: __viw__
+* Select current line: __V__ 
 * Open new buffer: __command :e filepath__
 * Open existing buffer: __command :b1, :b filename (or part of it)__
 * Previous buffer: __command :bp__
@@ -27,3 +29,4 @@ __
 * Find and replace: __%s/search/replace[/regex flag]__
 * Converts tabs to spaces in document: __retab__
 * Tab navigation commands: __:tabnew :tabclose :tabp :tabn 1-9gt (go to tab)__
+
