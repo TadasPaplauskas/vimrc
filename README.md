@@ -29,4 +29,9 @@ __
 * Find and replace: __%s/search/replace[/regex flag]__
 * Converts tabs to spaces in document: __retab__
 * Tab navigation commands: __:tabnew :tabclose :tabp :tabn 1-9gt (go to tab)__
-
+* Find a file: __:find filename[tab]__
+* Explore files: __:E[xlore]__
+* Create a new file from explorer: __%__
+* Copy a file from explorer: __mf__ (mark files), __mt__ (select target folder), __mc__ (copy)
+* Rename file from explorer: __R__
+* Create a new file from explorer: __%__
