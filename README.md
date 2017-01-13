@@ -35,3 +35,7 @@ __
 * Copy a file from explorer: __mf__ (mark files), __mt__ (select target folder), __mc__ (copy)
 * Rename file from explorer: __R__
 * Create a new file from explorer: __%__
+
+## More goodies
+https://peteraba.com/blog/my-vanilla-vim-cheatsheet/
+
