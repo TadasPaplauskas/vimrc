@@ -1,7 +1,7 @@
 # vimrc
-My very basic, vanilla vim setup fnd cheatsheet or basic productivity in the remote environments.__
+My very basic, vanilla vim setup fnd cheatsheet or basic productivity in the remote environments.
 __
-## Cheatsheet__
+## Cheatsheet
 * Undo: __u__
 * Redo: __ctrl r__
 * Insert before the cursor: __i__
@@ -35,7 +35,7 @@ __
 * Copy a file from explorer: __mf__ (mark files), __mt__ (select target folder), __mc__ (copy)
 * Rename file from explorer: __R__
 * Create a new file from explorer: __%__
-
+* Show full current path: __ctrl + g__
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/
 
