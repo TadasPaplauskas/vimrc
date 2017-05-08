@@ -37,6 +37,10 @@ set path=.,**
 set wildmenu
 set wildmode=full
 let g:netrw_keepdir=0
+" ignore case when searching
+set ignorecase
+" ignore case when looking for all-lower case strings
+" set smartcase
 
 " --- Commands ---
 " Delete all Trailing space in file
