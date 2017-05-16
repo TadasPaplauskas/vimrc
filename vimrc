@@ -55,7 +55,9 @@ nmap <leader>t :tabp<CR>
 nmap <leader>b :b#<CR>
 nmap <leader>cp :CtrlP<CR>
 cmap cp :CtrlP
+nmap <leader>o :NERDTreeToggle<CR>
 
 " --- Plugins ---
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/nerdtree
 set wildignore+=*/vendor/*,*.so,*.swp,*.zip
