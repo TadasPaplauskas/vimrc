@@ -37,6 +37,8 @@ __
 * Create a new file from explorer: __%__
 * Show full current path: __ctrl + g__
 * Move line up or down: __command :m-+123__
+* Duplicate line: __yy__ or __Y__ and then __p__ or __P__
+
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/
 
