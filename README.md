@@ -36,6 +36,7 @@ __
 * Rename file from explorer: __R__
 * Create a new file from explorer: __%__
 * Show full current path: __ctrl + g__
+* Move line up or down: __command :m-+123__
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/
 

@@ -50,8 +50,12 @@ set ignorecase
 "--- Maps ---
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! %!sudo tee > /dev/null %
-nnoremap <leader>l :ls<CR>:b<Space>
-nnoremap <leader>t :tabp<CR>
-nnoremap <leader>b :bp<CR>
+nmap <leader>l :ls<CR>:b<Space>
+nmap <leader>t :tabp<CR>
+nmap <leader>b :b#<CR>
+nmap <leader>cp :CtrlP<CR>
+cmap cp :CtrlP
 
-
+" --- Plugins ---
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set wildignore+=*/vendor/*,*.so,*.swp,*.zip
