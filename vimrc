@@ -8,10 +8,19 @@ set nowrap
 set vb
 set ruler
 set hidden
-set tabstop=4
 set shiftwidth=4
+
+" spaces instead of tabs
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
 " smartindent should work better for C-like files. autoindent just copies indentation from previous line.
-set autoindent
+set smartindent
 " enable indentation based on file extension
 filetype plugin indent on
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
