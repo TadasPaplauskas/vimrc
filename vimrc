@@ -33,6 +33,9 @@ set cursorline
 " evening.vim  koehler.vim  morning.vim  murphy.vim  pablo.vim  peachpuff.vim
 " ron.vim  shine.vim  slate.vim  torte.vim  zellner.vim
 colorscheme desert
+" display column at 100 symbols
+set colorcolumn=100
+
 set autoread
 " shift + arrows select text and more windows goodies
 behave mswin
@@ -42,7 +45,7 @@ set clipboard=unnamed
 set incsearch
 " backspace through anything
 set backspace=indent,eol,start
-set path=.,**
+set path=$PWD/**,/Users/tadas/Sites/**,/Users/tadas/Dropbox/Projects/**
 set wildmenu
 set wildmode=full
 let g:netrw_keepdir=0
@@ -70,3 +73,7 @@ nmap <leader>o :NERDTreeToggle<CR>
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/nerdtree
 set wildignore+=*/vendor/*,*.so,*.swp,*.zip
+
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+" start in mixed mode
+let g:ctrlp_cmd = 'CtrlPMixed'
