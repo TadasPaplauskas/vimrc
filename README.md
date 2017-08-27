@@ -9,7 +9,6 @@ __
 * Insert at the end of the line: __A__
 * Insert at the beginning of the line: __I__
 * Autocomplete dialog: __ctrl n__
-* Insert first autocomplete match: __ctrl p__
 * Suspend vim process: __ctrl z__
 * Resume suspended vim process from console: __fg (foreground)__
 * Go to the beginning of the current or previous word: __b__
@@ -38,7 +37,9 @@ __
 * Show full current path: __ctrl + g__
 * Move line up or down: __command :m-+123__
 * Duplicate line: __yy__ or __Y__ and then __p__ or __P__
-
+* Indent or unindent a line: __<<__ or __>>__
+* Indent or unindent a block of text: select in visual mode and __<__ or __>__
+* Jump to paragraph/text block: __{__ and __}__
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/
 

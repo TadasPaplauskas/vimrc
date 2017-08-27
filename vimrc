@@ -66,13 +66,10 @@ set wildignore+=*/vendor/*,*.so,*.swp,*.zip
 let g:netrw_keepdir=0
 let g:netrw_liststyle=3
 let g:netrw_banner=0
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-
+" Hide swp and dot files
+let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+,*\.swp$' 
 " Allow netrw to remove non-empty local directories
 let g:netrw_localrmdir='rm -r'
-
 " Per default, netrw leaves unmodified buffers open. This autocommand
 " deletes netrw's buffer once it's hidden (using ':q', for example)
 autocmd FileType netrw setl bufhidden=delete
@@ -84,14 +81,14 @@ let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git'
 cmap w!! %!sudo tee > /dev/null %
 nmap <leader>l :ls<CR>:b<Space>
 nmap <leader>t :tabp<CR>
-nmap <leader>b :b#<CR>
-nmap <Leader>w :w <CR>
-nmap <Leader>q :bd <CR>
+nmap <leader>b :bp<CR>
+nmap <Leader>w :w<CR>
+nmap <Leader>d :bd<CR>
 nmap <leader>p :CtrlP<CR>i
-nmap <leader>o :VEx<CR>
+nmap <leader>o :Ex<CR>
 
-nnoremap <C-H> :bp <CR>
-nnoremap <C-L> :bn <CR>
+nnoremap <C-H> :bp<CR>
+nnoremap <C-L> :bn<CR>
 
 " --- Plugins ---
 set runtimepath^=~/.vim/bundle/ctrlp.vim
