@@ -84,11 +84,15 @@ nmap <leader>t :tabp<CR>
 nmap <leader>b :bp<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>d :bd<CR>
-nmap <leader>p :CtrlP<CR>i
+nmap <leader>p :CtrlP<CR>
 nmap <leader>o :Ex<CR>
 
 nnoremap <C-H> :bp<CR>
 nnoremap <C-L> :bn<CR>
+
+" Avoid shift to get to cmdline mode, but keep old ; behaviour on double click
+map ; :
+noremap ;; ;
 
 " --- Plugins ---
 set runtimepath^=~/.vim/bundle/ctrlp.vim
