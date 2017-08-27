@@ -1,4 +1,5 @@
 " --- Configs ---
+set guifont=Menlo\ Regular:h12
 set history=1000
 scriptencoding utf-8
 set encoding=utf-8
@@ -52,7 +53,7 @@ set incsearch
 " highlight search results
 set hlsearch
 " clear highlight
-nnoremap <leader><space> :nohls <CR>
+nnoremap <space><space> :nohls <CR>
 " ignore case when searching
 set ignorecase
 " don't ignore capitals in searches
@@ -77,6 +78,7 @@ autocmd FileType netrw setl bufhidden=delete
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git'
 
 " --- Mappings ---
+let mapleader=" "
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! %!sudo tee > /dev/null %
 nmap <leader>l :ls<CR>:b<Space>
