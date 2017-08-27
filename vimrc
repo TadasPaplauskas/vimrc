@@ -83,7 +83,7 @@ let mapleader=" "
 cmap w!! %!sudo tee > /dev/null %
 nmap <leader>l :ls<CR>:b<Space>
 nmap <leader>t :tabp<CR>
-nmap <leader>b :bp<CR>
+nmap <leader>b :b#<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>d :bd<CR>
 nmap <leader>p :CtrlP<CR>
