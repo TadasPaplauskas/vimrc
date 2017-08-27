@@ -40,6 +40,7 @@ __
 * Indent or unindent a line: __<<__ or __>>__
 * Indent or unindent a block of text: select in visual mode and __<__ or __>__
 * Jump to paragraph/text block: __{__ and __}__
+
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/
 
