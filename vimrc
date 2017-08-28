@@ -99,6 +99,7 @@ noremap ;; ;
 " --- Plugins ---
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/syntastic
+set runtimepath^=~/.vim/bundle/ctrlp-funky
 
 " start in mixed mode
 let g:ctrlp_cmd='CtrlPMixed'
@@ -118,13 +119,17 @@ let g:ctrlp_abbrev = {
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_auto_jump = 1
 let g:syntastic_loc_list_height = 5
+
+" ctrlp-funky config
+nnoremap <Leader>fu :CtrlPFunky<Cr>
+" narrow the list down with a word under cursor
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
 " --- Helper commands ---
 " Delete all Trailing space in file
