@@ -96,6 +96,9 @@ nnoremap <C-L> :bn<CR>
 map ; :
 noremap ;; ;
 
+" Reload tags
+map <F5> :!ctags -R --exclude=".git" --exclude="node_modules" --exclude="plugins" --exclude="_ide_helpers.php"<CR>
+
 " --- Plugins ---
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/syntastic
