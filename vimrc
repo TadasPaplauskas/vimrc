@@ -140,3 +140,5 @@ nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 " Current file path
 :command Path echo expand('%:p')
 
+" crontab fix
+autocmd filetype crontab setlocal nobackup nowritebackup
