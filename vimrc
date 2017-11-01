@@ -66,7 +66,7 @@ set wildignore+=*/vendor/*,*.so,*.swp,*.zip
 " start from current file directory
 let g:netrw_keepdir=0
 let g:netrw_liststyle=3
-let g:netrw_banner=0
+let g:netrw_banner=1
 " Hide swp and dot files
 let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+,*\.swp$' 
 " Allow netrw to remove non-empty local directories
