@@ -40,7 +40,7 @@ set colorcolumn=100
 set autoread
 " shift + arrows select text and more windows goodies
 behave mswin
-set mouse=a
+" set mouse=a enable mouse support
 set clipboard=unnamed
 " backspace through anything
 set backspace=indent,eol,start
