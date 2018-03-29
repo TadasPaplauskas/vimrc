@@ -96,9 +96,6 @@ nnoremap <C-L> :bn<CR>
 map ; :
 noremap ;; ;
 
-" Reload tags
-map <F5> :!ctags -R --exclude=".git" --exclude="node_modules" --exclude="plugins" --exclude="_ide_helpers.php"<CR>
-
 " Map U to redo (more useful)
 map U <c-r>
 
