@@ -6,4 +6,4 @@
 	url = git@github.com:tacahiroy/ctrlp-funky.git
 [submodule "syntastic"]
 	path = syntastic
-	url = git@github.com:vim-syntastic/syntastic.git
+	url = https://github.com/vim-syntastic/syntastic.git
