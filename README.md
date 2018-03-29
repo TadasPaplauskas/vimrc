@@ -43,7 +43,8 @@ Run setup.sh.
 * Duplicate line: __yy__ or __Y__ and then __p__ or __P__
 * Indent or unindent a line: __<<__ or __>>__
 * Indent or unindent a block of text: select in visual mode and __<__ or __>__
-* Jump to paragraph/text block: __{__ and __}__
+* Jump to paragraph: __{__ and __}__
+* Jump to block: __[[__ and __]]__
 * Browse old file list: __command :bro[wse] ol[dfiles][!]__
 
 ## More goodies
