@@ -11,7 +11,8 @@ Run setup.sh.
 * Insert after the cursor: __a__
 * Insert at the end of the line: __A__
 * Insert at the beginning of the line: __I__
-* Autocomplete dialog: __ctrl n__
+* Next autocomplete option: __ctrl n__
+* Previous autocomplete option: __ctrl p__
 * Suspend vim process: __ctrl z__
 * Resume suspended vim process from console: __fg (foreground)__
 * Go to the beginning of the current or previous word: __b__
