@@ -103,9 +103,9 @@ map <F5> :!ctags -R --exclude=".git" --exclude="node_modules" --exclude="plugins
 map U <c-r>
 
 " --- Plugins ---
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-set runtimepath^=~/.vim/bundle/syntastic
-set runtimepath^=~/.vim/bundle/ctrlp-funky
+set runtimepath^=~/.vim/ctrlp.vim
+set runtimepath^=~/.vim/syntastic
+set runtimepath^=~/.vim/ctrlp-funky
 
 " start in mixed mode
 let g:ctrlp_cmd='CtrlPMixed'
