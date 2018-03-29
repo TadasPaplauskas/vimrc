@@ -1,5 +1,5 @@
 # vimrc
-My very basic, almost vanilla vim setup for cheatsheet or basic productivity in the remote environments.
+My very basic vim setup and a cheatsheet to go with it. Trying to keep customizations to a minimum.
 
 ## Installing
 Run setup.sh.
@@ -44,6 +44,7 @@ Run setup.sh.
 * Indent or unindent a line: __<<__ or __>>__
 * Indent or unindent a block of text: select in visual mode and __<__ or __>__
 * Jump to paragraph/text block: __{__ and __}__
+* Browse old file list: __command :bro[wse] ol[dfiles][!]__
 
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/
