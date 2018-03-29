@@ -2,10 +2,9 @@
 My very basic, vanilla vim setup fnd cheatsheet or basic productivity in the remote environments.
 
 ## Installing
-Clone this repo into any cloud folder and setup two symlinks:
 ```
-ln -s [folder path]/vimrc ~/.vimrc
-ln -s [folder path] ~/.vim
+git clone git@github.com:tadaspaplauskas/vimrc.git ~/vimrc
+ln -s ~vimrc/vimrc ~/.vimrc
 ```
 
 __
