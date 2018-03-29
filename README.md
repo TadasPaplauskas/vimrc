@@ -2,11 +2,7 @@
 My very basic, almost vanilla vim setup for cheatsheet or basic productivity in the remote environments.
 
 ## Installing
-```
-git clone git@github.com:tadaspaplauskas/vimrc.git ~/.vim
-ln -s ~/.vim/vimrc ~/.vimrc
-```
-
+Run setup.sh.
 __
 ## Cheatsheet
 * Undo: __u__
