@@ -3,7 +3,7 @@ My very basic, almost vanilla vim setup for cheatsheet or basic productivity in 
 
 ## Installing
 Run setup.sh.
-__
+
 ## Cheatsheet
 * Undo: __u__
 * Redo: __ctrl r__
