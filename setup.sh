@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 mkdir ~/.vim
 git clone https://github.com/tadaspaplauskas/vimrc.git ~/.vim
 cd ~/.vim
