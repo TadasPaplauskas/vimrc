@@ -2,7 +2,10 @@
 My very basic vim setup and a cheatsheet to go with it. Trying to keep customizations to a minimum.
 
 ## Installing
-Run setup.sh.
+Run:
+```
+curl https://raw.githubusercontent.com/tadaspaplauskas/vimrc/master/setup.sh | bash
+```
 
 ## Cheatsheet
 * Undo: __u__
