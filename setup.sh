@@ -1,8 +1,7 @@
 #!/bin/sh
 mkdir ~/.vim
-git clone git@github.com:tadaspaplauskas/vimrc.git ~/.vim
+git clone https://github.com/tadaspaplauskas/vimrc.git ~/.vim
 cd ~/.vim
 git submodule init
 git submodule update
 ln -s ~/.vim/vimrc ~/.vimrc
-
