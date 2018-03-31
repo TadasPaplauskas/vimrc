@@ -1,7 +1,4 @@
 #!/bin/bash
-mkdir ~/.vim
-git clone https://github.com/tadaspaplauskas/vimrc.git ~/.vim
-cd ~/.vim
-git submodule init
-git submodule update
-ln -s ~/.vim/vimrc ~/.vimrc
+mkdir ~/.vim || exit
+git clone --recurse-submodules https://github.com/tadaspaplauskas/vimrc.git ~/.vim || exit
+ln -s ~/.vim/vimrc ~/.vimrc || exit
