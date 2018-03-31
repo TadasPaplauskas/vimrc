@@ -21,7 +21,7 @@ set shiftwidth=4
 set expandtab
 
 " smartindent should work better for C-like files. autoindent just copies indentation from previous line.
-set smartindent
+set autoindent
 " enable indentation based on file extension
 filetype plugin indent on
 autocmd FileType html setlocal shiftwidth=2 tabstop = 2
