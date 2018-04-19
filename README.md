@@ -49,6 +49,8 @@ curl https://raw.githubusercontent.com/tadaspaplauskas/vimrc/master/setup.sh | b
 * Jump to paragraph: __{__ and __}__
 * Jump to block: __[[__ and __]]__
 * Browse old file list: __command :bro[wse] ol[dfiles][!]__
+* Navigate functions in this file: __:CtrlPFunky__ or __<leader> f__
+* Navigate to the definition of the function under the cursor: __<leader> tf__
 
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/

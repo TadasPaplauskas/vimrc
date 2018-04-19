@@ -130,9 +130,9 @@ let g:syntastic_auto_jump = 1
 let g:syntastic_loc_list_height = 5
 
 " ctrlp-funky config
-nnoremap <Leader>fu :CtrlPFunky<Cr>
+nmap <Leader>f :CtrlPFunky<Cr>
 " narrow the list down with a word under cursor
-nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+nmap <Leader>tf :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
 " --- Helper commands ---
 " Delete all Trailing space in file
