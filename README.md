@@ -51,6 +51,8 @@ curl https://raw.githubusercontent.com/tadaspaplauskas/vimrc/master/setup.sh | b
 * Browse old file list: __command :bro[wse] ol[dfiles][!]__
 * Navigate functions in this file: __:CtrlPFunky__ or __<leader> f__
 * Navigate to the definition of the function under the cursor: __<leader> tf__
+* Find symbol in current line: __f{char}__
+* Find symbol in current line (backwards): __F{char}__
 
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/
