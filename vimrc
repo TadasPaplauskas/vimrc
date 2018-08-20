@@ -63,6 +63,12 @@ set smartcase
 set path=$PWD/**,/Users/tadas/Sites/**,/Users/tadas/Dropbox/Projects/**
 set wildignore+=*/vendor/*,*.so,*.swp,*.zip
 
+" disable arrow keys. use hjkl instead
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 " start from current file directory
 let g:netrw_keepdir=0
 let g:netrw_liststyle=3
