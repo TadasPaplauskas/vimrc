@@ -53,6 +53,7 @@ curl https://raw.githubusercontent.com/tadaspaplauskas/vimrc/master/setup.sh | b
 * Navigate to the definition of the function under the cursor: __<leader> tf__
 * Find symbol in current line: __f{char}__
 * Find symbol in current line (backwards): __F{char}__
+* Remove line without cutting (blackhole registry): __ _d __
 
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/
