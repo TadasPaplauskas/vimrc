@@ -11,6 +11,9 @@ set ruler
 set hidden
 set shiftwidth=4
 
+" deal with crontab issue - crontab: temp file must be edited in place
+set backupskip=/tmp/*,/private/tmp/*" 
+
 " spaces instead of tabs
 filetype plugin indent on
 " show existing tab with 4 spaces width
