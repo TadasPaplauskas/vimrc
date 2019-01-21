@@ -12,7 +12,7 @@ set hidden
 set shiftwidth=4
 
 " deal with crontab issue - crontab: temp file must be edited in place
-set backupskip=/tmp/*,/private/tmp/*" 
+set backupskip=/tmp/*,/private/tmp/*"
 
 " spaces instead of tabs
 filetype plugin indent on
@@ -33,7 +33,7 @@ autocmd FileType tpl setlocal shiftwidth=2 tabstop = 2
 set nostartofline
 " Highlights the current line background
 set cursorline
-" blue.vim  darkblue.vim  default.vim  delek.vim  desert.vim  elflord.vim 
+" blue.vim  darkblue.vim  default.vim  delek.vim  desert.vim  elflord.vim
 " evening.vim  koehler.vim  morning.vim  murphy.vim  pablo.vim  peachpuff.vim
 " ron.vim  shine.vim  slate.vim  torte.vim  zellner.vim
 colorscheme desert
@@ -63,7 +63,6 @@ set ignorecase
 set smartcase
 
 " --- Browsing ---
-set path=$PWD/**,/Users/tadas/Sites/**,/Users/tadas/Dropbox/Projects/**
 set wildignore+=*/vendor/*,*.so,*.swp,*.zip
 
 " disable arrow keys. use hjkl instead
@@ -77,7 +76,7 @@ let g:netrw_keepdir=0
 let g:netrw_liststyle=3
 let g:netrw_banner=1
 " Hide swp and dot files
-let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+,*\.swp$' 
+let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+,*\.swp$'
 " Allow netrw to remove non-empty local directories
 let g:netrw_localrmdir='rm -r'
 " Per default, netrw leaves unmodified buffers open. This autocommand
