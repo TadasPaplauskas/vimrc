@@ -37,7 +37,7 @@ set cursorline
 " evening.vim  koehler.vim  morning.vim  murphy.vim  pablo.vim  peachpuff.vim
 " ron.vim  shine.vim  slate.vim  torte.vim  zellner.vim
 " my favorites: desert, industry, default
-colorscheme industry
+colorscheme default
 " display column at 100 symbols
 set colorcolumn=100
 " auto-read changed file (works only when changing, or something...)
