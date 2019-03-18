@@ -1,67 +1,31 @@
-" --- Configs ---
-set guifont=Menlo\ Regular:h12
+" --- Config ---
 set history=1000
-scriptencoding utf-8
-set encoding=utf-8
 syntax on
 set number
-set nowrap
-set vb
+set vb " no bell
 set ruler
-set hidden
-set shiftwidth=4
-
-" deal with crontab issue - crontab: temp file must be edited in place
-set backupskip=/tmp/*,/private/tmp/*"
-
-" spaces instead of tabs
-filetype plugin indent on
-" show existing tab with 4 spaces width
+set autoread " read file changes
 set tabstop=4
-" when indenting with '>', use 4 spaces width
 set shiftwidth=4
-" On pressing tab, insert 4 spaces
 set expandtab
+set smartindent
+set backspace=indent,eol,start " backspace through anything
+set hls
+nnoremap <space><space> :nohls <CR>
+set ignorecase
+set smartcase
 
-" smartindent should work better for C-like files. autoindent just copies indentation from previous line.
-set autoindent
 " enable indentation based on file extension
-filetype plugin indent on
-autocmd FileType html setlocal shiftwidth=2 tabstop = 2
-autocmd FileType tpl setlocal shiftwidth=2 tabstop = 2
+"filetype plugin indent on
+"autocmd FileType html setlocal shiftwidth=2 tabstop = 2
+"autocmd FileType tpl setlocal shiftwidth=2 tabstop = 2
 " Prevent cursor from moving to beginning of line when switching buffers
 set nostartofline
 " Highlights the current line background
 set cursorline
-" blue.vim  darkblue.vim  default.vim  delek.vim  desert.vim  elflord.vim
-" evening.vim  koehler.vim  morning.vim  murphy.vim  pablo.vim  peachpuff.vim
-" ron.vim  shine.vim  slate.vim  torte.vim  zellner.vim
-" my favorites: desert, industry, default
-colorscheme default
-" display column at 100 symbols
-set colorcolumn=100
-" auto-read changed file (works only when changing, or something...)
-set autoread
-" shift + arrows select text and more windows goodies
-behave mswin
-" set mouse=a enable mouse support
-set clipboard=unnamed
-" backspace through anything
-set backspace=indent,eol,start
-set wildmenu
-set wildmode=full
-
-" --- Search ---
-" start searching while typing
-set incsearch
-" highlight search results
-set hlsearch
-" clear highlight
-nnoremap <space><space> :nohls <CR>
-" ignore case when searching
-set ignorecase
-" don't ignore capitals in searches
-set smartcase
+"set clipboard=unnamed
+"set wildmenu
+"set wildmode=full
 
 " --- Browsing ---
 set wildignore+=*/vendor/*,*.so,*.swp,*.zip
@@ -97,16 +61,10 @@ nmap <Leader>w :w<CR>
 nmap <Leader>d :bd<CR>
 nmap <leader>p :CtrlP<CR>
 nmap <leader>o :Ex<CR>
-
+map U <c-r>
 nnoremap <C-H> :bp<CR>
 nnoremap <C-L> :bn<CR>
 
-" Avoid shift to get to cmdline mode, but keep old ; behaviour on double click
-map ; :
-noremap ;; ;
-
-" Map U to redo (more useful)
-map U <c-r>
 
 " --- Plugins ---
 set runtimepath^=~/.vim/ctrlp.vim
@@ -149,6 +107,7 @@ nmap <Leader>tf :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 " Current file path
 :command Path echo expand('%:p')
 
-" crontab fix. Seems to be causing problems on other platforms
-" autocmd filetype crontab setlocal nobackup nowritebackup
+" --- Misc ---
+" deal with crontab issue - crontab: temp file must be edited in place
+set backupskip=/tmp/*,/private/tmp/*"
 
