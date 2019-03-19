@@ -11,25 +11,36 @@ set expandtab
 set smartindent
 set backspace=indent,eol,start " backspace through anything
 set hls
-nnoremap <space><space> :nohls <CR>
+set noswapfile
 set ignorecase
 set smartcase
-
 " enable indentation based on file extension
-"filetype plugin indent on
-"autocmd FileType html setlocal shiftwidth=2 tabstop = 2
-"autocmd FileType tpl setlocal shiftwidth=2 tabstop = 2
+filetype plugin indent on
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType tpl setlocal shiftwidth=2 tabstop=2
 " Prevent cursor from moving to beginning of line when switching buffers
 set nostartofline
 " Highlights the current line background
 set cursorline
-"set clipboard=unnamed
-"set wildmenu
-"set wildmode=full
+" share VIM clipboard with macos
+set clipboard=unnamed
+" display options when autocompleting a command with tab
+set wildmenu
 
-" --- Browsing ---
-set wildignore+=*/vendor/*,*.so,*.swp,*.zip
-
+" --- Mappings ---
+let mapleader=" "
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! %!sudo tee > /dev/null %
+map U <c-r>
+nmap <leader>l :ls<CR>:b<Space>
+nmap <leader>b :b#<CR>
+nmap <Leader>w :w<CR>
+nmap <Leader>d :bd<CR>
+nmap <leader>p :CtrlP<CR>
+nmap <leader>o :Ex<CR>
+nnoremap <C-H> :bp<CR>
+nnoremap <C-L> :bn<CR>
+noremap <space><space> :nohls <CR>
 " disable arrow keys. use hjkl instead
 noremap <Up> <NOP>
 noremap <Down> <NOP>
@@ -40,8 +51,6 @@ noremap <Right> <NOP>
 let g:netrw_keepdir=0
 let g:netrw_liststyle=3
 let g:netrw_banner=1
-" Hide swp and dot files
-let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+,*\.swp$'
 " Allow netrw to remove non-empty local directories
 let g:netrw_localrmdir='rm -r'
 " Per default, netrw leaves unmodified buffers open. This autocommand
@@ -50,21 +59,11 @@ autocmd FileType netrw setl bufhidden=delete
 
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git'
 
-" --- Mappings ---
-let mapleader=" "
-" Allow saving of files as sudo when I forgot to start vim using sudo.
-cmap w!! %!sudo tee > /dev/null %
-nmap <leader>l :ls<CR>:b<Space>
-nmap <leader>t :tabp<CR>
-nmap <leader>b :b#<CR>
-nmap <Leader>w :w<CR>
-nmap <Leader>d :bd<CR>
-nmap <leader>p :CtrlP<CR>
-nmap <leader>o :Ex<CR>
-map U <c-r>
-nnoremap <C-H> :bp<CR>
-nnoremap <C-L> :bn<CR>
-
+" --- Helper commands ---
+" Delete all Trailing space in file
+:command NoTrails %s/\s\+$//<CR>
+" Current file path
+:command Path echo expand('%:p')
 
 " --- Plugins ---
 set runtimepath^=~/.vim/ctrlp.vim
@@ -100,12 +99,6 @@ let g:syntastic_loc_list_height = 5
 nmap <Leader>f :CtrlPFunky<Cr>
 " narrow the list down with a word under cursor
 nmap <Leader>tf :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
-
-" --- Helper commands ---
-" Delete all Trailing space in file
-:command NoTrails %s/\s\+$//<CR>
-" Current file path
-:command Path echo expand('%:p')
 
 " --- Misc ---
 " deal with crontab issue - crontab: temp file must be edited in place
