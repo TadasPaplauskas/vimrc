@@ -55,7 +55,7 @@ curl -s https://raw.githubusercontent.com/tadaspaplauskas/vimrc/master/setup.sh 
 * Find symbol in current line (backwards): __F{char}__
 * Remove line without cutting (blackhole registry): __d__
 * Display current line in the center: __zz__
-* Search in all files: __:grep "Keyword" . -RI --color
+* Search in all files: __:grep "Keyword" . -RI --color__
 
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/

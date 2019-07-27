@@ -26,6 +26,8 @@ set cursorline
 set clipboard=unnamed
 " display options when autocompleting a command with tab
 set wildmenu
+" force javascript syntax highlighting on .vue files
+autocmd BufNewFile,BufRead *.vue set syntax=javascript
 
 " --- Mappings ---
 let mapleader=" "
