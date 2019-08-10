@@ -2,7 +2,7 @@
 My very basic vim setup and a cheatsheet to go with it. Trying to keep customizations to a minimum.
 
 ## Installing
-Run the setup script in the directory of your choice:
+Read through setup.sh, it's only 3 lines. After you understand what it's doing, just run:
 ```
 curl -s https://raw.githubusercontent.com/tadaspaplauskas/vimrc/master/setup.sh | bash
 ```
