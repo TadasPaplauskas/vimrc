@@ -1,9 +1,0 @@
-[submodule "ctrlp.vim"]
-	path = ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "ctrlp-funky"]
-	path = ctrlp-funky
-	url = https://github.com/tacahiroy/ctrlp-funky.git
-[submodule "syntastic"]
-	path = syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
