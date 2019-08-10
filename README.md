@@ -56,7 +56,7 @@ curl -s https://raw.githubusercontent.com/tadaspaplauskas/vimrc/master/setup.sh 
 * Remove line without cutting (blackhole registry): __d__
 * Display current line in the center: __zz__
 * Search in all files: __:grep "Keyword" . -RI --color__
-
+* Jump to the last cursor position: __`.__
 ## More goodies
 https://peteraba.com/blog/my-vanilla-vim-cheatsheet/
 
