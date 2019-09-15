@@ -60,3 +60,7 @@ autocmd FileType netrw setl bufhidden=delete
 " deal with crontab issue - crontab: temp file must be edited in place
 set backupskip=/tmp/*,/private/tmp/*"
 
+" --- CtrlP ---
+set runtimepath^=~/.vim/ctrlp.vim
+nmap <leader>p :CtrlP<CR>
+
