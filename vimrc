@@ -37,6 +37,8 @@ nmap <leader>bn :bn<CR>
 nmap <leader>o :Ex<CR>
 nmap <leader>w :w<CR>
 noremap <space><space> :nohls <CR>
+" alt way to escape from insert mode since macbook's touchbar esc key is barely usable
+inoremap ii <Esc>
 
 " start from current file directory
 let g:netrw_keepdir=0
