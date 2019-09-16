@@ -60,5 +60,17 @@ set backupskip=/tmp/*,/private/tmp/*"
 
 " --- CtrlP ---
 set runtimepath^=~/.vim/ctrlp.vim
-nmap <leader>p :CtrlP<CR>
+nmap <leader>p :CtrlPMixed<CR>
+let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git'
+" ignore spaces
+let g:ctrlp_abbrev = {
+\ 'gmode': 'i',
+\ 'abbrevs': [
+ \ {
+   \ 'pattern': ' ',
+   \ 'expanded': '',
+   \ 'mode': 'pfrz',
+ \ },
+ \ ]
+\ }
 
