@@ -8,6 +8,7 @@ Session.vim
 # temporary
 .netrwhist
 undo
+.DS_Store
 *~
 # auto-generated tag files
 tags
