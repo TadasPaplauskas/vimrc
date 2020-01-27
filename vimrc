@@ -25,6 +25,9 @@ set clipboard=unnamed
 set wildmenu
 " force javascript syntax highlighting on .vue files
 autocmd BufNewFile,BufRead *.vue set syntax=javascript
+" persist undo tree for each file
+set undofile
+set undodir^=~/.vim/undo//
 
 " --- Mappings ---
 let mapleader=" "
