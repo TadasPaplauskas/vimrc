@@ -50,6 +50,8 @@ autocmd FileType netrw setl bufhidden=delete
 :command NoTrails %s/\s\+$//<CR>
 " Current file path
 :command Path echo expand('%:p')
+" open terminal on the right
+:command T vertical rightbelow terminal
 
 " --- Misc ---
 " deal with crontab issue - crontab: temp file must be edited in place
