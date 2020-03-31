@@ -34,6 +34,10 @@ let mapleader=" "
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! %!sudo tee > /dev/null %
 map U <c-r>
+nmap <leader>b :b#<CR>
+nmap <leader>bb :b#<CR>
+nmap <leader>bn :bnext<CR>
+nmap <leader>bp :bprevious<CR>
 
 " start from current file directory
 let g:netrw_keepdir=0
