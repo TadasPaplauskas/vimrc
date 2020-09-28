@@ -27,7 +27,7 @@ set wildmenu
 autocmd BufNewFile,BufRead *.vue set syntax=javascript
 " persist undo tree for each file
 set undofile
-set undodir^=~/.vim/undo//
+set undodir^=~/.vim/undo/
 
 " --- Mappings ---
 let mapleader=" "
@@ -65,6 +65,7 @@ autocmd BufWritePre * %s/\s\+$//e
 :command Path echo expand('%:p')
 " open terminal on the right
 :command T vertical rightbelow terminal
+:command -nargs=+ Grep execute 'silent grep -r "<args>" *'
 
 " --- Misc ---
 " deal with crontab issue - crontab: temp file must be edited in place
@@ -85,12 +86,3 @@ let g:ctrlp_abbrev = {
  \ ]
 \ }
 
-" --- Gutentags ---
-set runtimepath^=~/.vim/vim-gutentags
-" Where to store tag files
-let g:gutentags_cache_dir = '~/.vim/tags'
-let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
-                            \ '*.phar', '*.ini', '*.rst', '*.md',
-                            \ '*vendor/*/test*', '*vendor/*/Test*',
-                            \ '*vendor/*/fixture*', '*vendor/*/Fixture*',
-                            \ '*var/cache*', '*var/log*']
